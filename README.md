@@ -29,3 +29,10 @@ Both notebooks are designed for **Google Colab** with lightweight configuration:
 2. Run the setup cell to install:
    ```bash
    pip install -q kaggle autogluon.tabular
+
+## 🎓 Kaggle AutoGluon Demos
+
+| Competition | Notebook | Video |
+|--------------|-----------|--------|
+| IEEE-CIS Fraud Detection | [View Notebook](ieee_cis_fraud_detection/ieee_cis_fraud_detection.ipynb) | [🎥 Watch](ieee_cis_fraud_detection/ieee-fraud-detection.mp4) |
+| California Housing Prices | [View Notebook](california_housing_prices/california_housing_prices.ipynb) | [🎥 Watch](california_housing_prices/california-house-prices.mp4) |
