@@ -14,7 +14,7 @@ Each notebook focuses on **clarity, speed, and reproducibility** rather than lea
 | [🔐 IEEE-CIS Fraud Detection](ieee-fraud-detection/README.md) | `ieee_cis_fraud_detection.ipynb` | 20 000 rows | Classification | Detects fraudulent transactions with AutoGluon’s LightGBM backend. |
 
 Each subfolder includes:
-- A ready-to-run **Jupyter notebook**
+- A ready-to-run **Colab notebook** (**Jupyter notebook**)
 - A **README.md** describing the workflow
 - The generated **submission.csv** for Kaggle upload
 
@@ -28,7 +28,7 @@ Both notebooks are designed for **Google Colab** with lightweight configuration:
    `/MyDrive/kaggle.json`
 2. Run the setup cell to install:
    ```bash
-   pip install -q kaggle autogluon.tabular
+   pip install -q kaggle autogluon.tabular scikit-learn
 
 ## 🎓 Kaggle AutoGluon Demos
 
