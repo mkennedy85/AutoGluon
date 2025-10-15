@@ -34,5 +34,5 @@ Both notebooks are designed for **Google Colab** with lightweight configuration:
 
 | Competition | Notebook | Video |
 |--------------|-----------|--------|
-| IEEE-CIS Fraud Detection | [View Notebook](ieee_cis_fraud_detection/ieee_cis_fraud_detection.ipynb) | [🎥 Watch](ieee_cis_fraud_detection/ieee-fraud-detection.mp4) |
-| California Housing Prices | [View Notebook](california_housing_prices/california_housing_prices.ipynb) | [🎥 Watch](california_housing_prices/california-house-prices.mp4) |
+| IEEE-CIS Fraud Detection | [View Notebook](ieee-fraud-detection/ieee_cis_fraud_detection.ipynb) | [🎥 Watch](ieee_cis_fraud_detection/ieee-fraud-detection.mp4) |
+| California Housing Prices | [View Notebook](california-house-prices/california_housing_prices.ipynb) | [🎥 Watch](california_housing_prices/california-house-prices.mp4) |
