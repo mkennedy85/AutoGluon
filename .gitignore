@@ -1,1 +1,135 @@
+# ==============================
+# Python / AutoML / Vertex AI
+# ==============================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+.agpu310/
+.ipython/
+.python-version
+
+# ==============================
+# Jupyter Notebooks
+# ==============================
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Jupyter runtime and temp files
+.jupyter/
+*.nbconvert.ipynb
+*.nbconvert/
+*.bak
+
+# ==============================
+# AutoGluon Artifacts
+# ==============================
+
+# Ignore model artifacts, logs, intermediate outputs
+artifacts/
+*/artifacts/
+*/artifacts/AutoGluonModels/
+*/artifacts/FE_AutoGluonModels/
+*/artifacts/*/
+!*/artifacts/README.md          # Keep any local artifact descriptions
+
+# Common AutoGluon outputs
+*.log
+*.lock
+*.tmp
+*.jsonl
+*.tsv
+*.csv
+*.txt
+
+# Keep specific metadata files for reproducibility
+!*/artifacts/feature_metadata.txt
+!*/artifacts/leaderboard*.csv
+!*/artifacts/predictions.csv
+
+# ==============================
+# System / OS Specific
+# ==============================
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.Trash-*
+
+# ==============================
+# Editors / IDEs
+# ==============================
+
+# VSCode
+.vscode/
+.history/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# ==============================
+# Videos / Media Assets
+# ==============================
+
+# Keep only compressed versions under assets/
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.webm
+!*/assets/*.mp4
+
+# ==============================
+# Other Temporary Files
+# ==============================
+
+*.zip
+*.tar
+*.gz
+*.pkl
+*.h5
+*.ckpt
+*.pth
+*.model
+*.bin
+*.pt
+*.onnx
+
+# ==============================
+# Data Files
+# ==============================
+
+# Ignore large datasets and caches
+data/
+datasets/
+.cache/
+*.parquet
+*.feather
+*.arrow
+*.npy
+*.npz
+*.sav
+*.hdf5
+
+# ==============================
+# Logs and Profiles
+# ==============================
+
+*.log
+*.out
+*.err
+*.pid
+*.prof

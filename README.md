@@ -1,38 +1,79 @@
-# AutoGluon Kaggle Demos — Academic Edition
+# AutoGluon Tabular Demos — Academic Edition
 
-This repository contains two fast, reproducible **AutoGluon Tabular** workflows demonstrating how to build, train, and submit models to Kaggle competitions directly from Google Colab.
+This repository contains a collection of **AutoGluon Tabular workflows** demonstrating how to engineer features, combine multimodal inputs, and build reproducible tabular models for both academic and applied data-science use.
 
-Each notebook focuses on **clarity, speed, and reproducibility** rather than leaderboard optimization, making them ideal for academic presentations or portfolio demonstrations.
+Each notebook is designed for **clarity, speed, and reproducibility**, making them ideal for graduate coursework, research labs, or portfolio demonstrations.
 
 ---
 
 ## 🧭 Repository Structure
 
-| Competition | Notebook | Sample Size | Problem Type | Description |
-|--------------|-----------|-------------|---------------|--------------|
-| [🏠 California Housing Prices](california-house-prices/README.md) | `california-house-prices.ipynb` | 20 000 rows | Regression | Predicts home sale prices using a fast LightGBM model. |
-| [🔐 IEEE-CIS Fraud Detection](ieee-fraud-detection/README.md) | `ieee_cis_fraud_detection.ipynb` | 20 000 rows | Classification | Detects fraudulent transactions with AutoGluon’s LightGBM backend. |
+| Module | Notebook | Problem Type | Description |
+|---------|-----------|---------------|--------------|
+| [🏠 California Housing Prices](california-house-prices/README.md) | `california_housing_prices.ipynb` | Regression | Predicts home sale prices using a lightweight AutoGluon workflow. |
+| [🔐 IEEE-CIS Fraud Detection](ieee-fraud-detection/README.md) | `ieee_cis_fraud_detection.ipynb` | Classification | Detects fraudulent transactions using AutoGluon’s LightGBM backend. |
+| [🧩 Tabular Feature Engineering](tabular-feature/README.md) | `tabular-feature.ipynb` | Feature Generation | Demonstrates AutoGluon’s feature generators, including datetime, categorical, and text n-gram transformations with outputs in `artifacts/`. |
+| [🧠 Tabular Multimodal](tabular-multimodal/README.md) | `tabular-multimodal.ipynb` | Multimodal Fusion | Combines numeric, categorical, and image-based features into a single unified AutoGluon training pipeline. |
+| [⚙️ Tabular Predictor](tabular-predictor/tabular_predictor.ipynb) | `tabular_predictor.ipynb` | Model Deployment | Demonstrates AutoGluon’s tabular predictor interface and leaderboard evaluation for reproducible experiments. |
 
 Each subfolder includes:
-- A ready-to-run **Colab notebook** (**Jupyter notebook**)
-- A **README.md** describing the workflow
-- The generated **submission.csv** for Kaggle upload
+- A **notebook** (`.ipynb`)
+- A **demo video** (`.mp4`, where available)
+- A **README.md** describing inputs, outputs, and methodology
+- An **artifacts/** directory containing generated model files and metadata
 
 ---
 
 ## ⚙️ Environment and Setup
 
-Both notebooks are designed for **Google Colab** with lightweight configuration:
+All notebooks are runnable in **Vertex AI Workbench** or **Google Colab**.
 
-1. Place your Kaggle API key at:  
-   `/MyDrive/kaggle.json`
-2. Run the setup cell to install:
-   ```bash
-   pip install -q kaggle autogluon.tabular scikit-learn
+### Recommended Environment (Vertex Workbench)
+```bash
+conda create -n agpu310 python=3.10 -y
+conda activate agpu310
+pip install -U pip wheel
+pip install autogluon pandas pyarrow matplotlib
+```
 
-## 🎓 Kaggle AutoGluon Demos
+Each notebook automatically manages its own `artifacts/` directory in the same folder for clean, reproducible execution.
 
-| Competition | Notebook | Video |
-|--------------|-----------|--------|
-| IEEE-CIS Fraud Detection | [View Notebook](ieee-fraud-detection/ieee_cis_fraud_detection.ipynb) | [🎥 Watch](ieee-fraud-detection/ieee-fraud-detection.mp4) |
-| California Housing Prices | [View Notebook](california-house-prices/california_housing_prices.ipynb) | [🎥 Watch](california-house-prices/california_housing_prices.ipynb) |
+---
+
+## 📊 Outputs
+
+Common outputs include:
+- `artifacts/leaderboard.csv` — leaderboard summary  
+- `artifacts/feature_metadata.txt` — record of generated features  
+- `artifacts/AutoGluonModels/` — trained models  
+- `artifacts/predictions.csv` — model predictions
+
+---
+
+## 🎥 Demos
+
+| Demo | Video |
+|------|--------|
+| California Housing | [🎥 Watch](california-house-prices/california-house-prices.mp4) |
+| IEEE-CIS Fraud Detection | [🎥 Watch](ieee-fraud-detection/ieee-fraud-detection.mp4) |
+| Tabular Feature Engineering | [🎥 Watch](tabular-feature/tabular-feature.mp4) *(optional)* |
+| Tabular Multimodal | [🎥 Watch](tabular-multimodal/tabular-multimodal.mp4) *(if available)* |
+| Tabular Predictor | [🎥 Watch](tabular-predictor/tabular-predictor.mp4) |
+
+---
+
+## 🧠 Purpose
+
+This repository serves as a compact academic showcase for:
+- Feature engineering experimentation
+- AutoML and model interpretability
+- Multimodal data handling
+- Reproducible pipelines for graduate-level coursework
+
+> Curated and presented by **Michael Kennedy**, M.S. Software Engineering candidate at SJSU.  
+> Designed for demonstration in **CMPE 272 / 273** and professional research environments.
+
+---
+
+**License:** MIT  
+**Framework:** [AutoGluon](https://auto.gluon.ai)
