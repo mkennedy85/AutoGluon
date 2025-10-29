@@ -86,11 +86,9 @@ artifacts/
 
 # Keep only compressed versions under assets/
 *.mov
-*.mp4
 *.avi
 *.mkv
 *.webm
-!*/assets/*.mp4
 
 # ==============================
 # Other Temporary Files

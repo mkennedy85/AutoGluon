@@ -18,7 +18,6 @@ Each notebook is designed for **clarity, speed, and reproducibility**, making th
 
 Each subfolder includes:
 - A **notebook** (`.ipynb`)
-- A **demo video** (`.mp4`, where available)
 - A **README.md** describing inputs, outputs, and methodology
 - An **artifacts/** directory containing generated model files and metadata
 
@@ -50,24 +49,28 @@ Common outputs include:
 
 ---
 
-## 🎥 Demos
+## 🎥 Demo Videos
+
+All videos are hosted in the [`/assets/`](assets/) directory for direct GitHub playback.
 
 | Demo | Video |
 |------|--------|
-| California Housing | [🎥 Watch](california-house-prices/california-house-prices.mp4) |
-| IEEE-CIS Fraud Detection | [🎥 Watch](ieee-fraud-detection/ieee-fraud-detection.mp4) |
-| Tabular Feature Engineering | [🎥 Watch](tabular-feature/tabular-feature.mp4) *(optional)* |
-| Tabular Multimodal | [🎥 Watch](tabular-multimodal/tabular-multimodal.mp4) *(if available)* |
-| Tabular Predictor | [🎥 Watch](tabular-predictor/tabular-predictor.mp4) |
+| 🏠 **California Housing Prices** | [🎥 Watch Demo](assets/california-house-prices.mp4) |
+| 🔐 **IEEE-CIS Fraud Detection** | [🎥 Watch Demo](assets/ieee-fraud-detection.mp4) |
+| 🧩 **Tabular Feature Engineering** | [🎥 Watch Demo](assets/tabular-feature.mp4) |
+| 🧠 **Tabular Multimodal** | [🎥 Watch Demo](assets/tabular-multimodal.mp4) |
+| ⚙️ **Tabular Predictor** | [🎥 Watch Demo](assets/tabular-predictor.mp4) |
+
+> You can preview any of these directly on GitHub — they are optimized for 720p playback and progressive loading.
 
 ---
 
 ## 🧠 Purpose
 
 This repository serves as a compact academic showcase for:
-- Feature engineering experimentation
-- AutoML and model interpretability
-- Multimodal data handling
+- Feature engineering experimentation  
+- AutoML and model interpretability  
+- Multimodal data handling  
 - Reproducible pipelines for graduate-level coursework
 
 > Curated and presented by **Michael Kennedy**, M.S. Software Engineering candidate at SJSU.  
